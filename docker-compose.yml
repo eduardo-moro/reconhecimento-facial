@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  start:
+    build:
+      context: .
+      dockerfile: "container/DockerFile"
+      target: "builder"
+    image: 'python:3.6-slim'
+    ports:
+      - 5000:5000
+    expose:
+      - 5000
+    volumes:
+      - ../reconhecimento/reconhecimento/:/reconhecimento/
+    command: gunicorn -w 6 -b 0.0.0.0:5000 app:app
+

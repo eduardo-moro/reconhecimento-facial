@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quadritech - Reconhecimento</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bem vindo à api de reconhecimento facial!</h1>
+            <h2>Para fazer uma validação facial, selecione duas imagens:</h2>
+
+            <form action="/reconhecimento" method="POST" target="_blank">
+                <div style="display: flex;">
+                    <label class="btn btn_file" for="img1">imagem 1
+                        <input class="file" id="img1" type="file" accept="images">
+                        <input id="file1" type="text" name="img1">
+                    </label>
+                    <label class="btn btn_file" for="img2">imagem 2
+                        <input class="file" id="img2" type="file" accept="images">
+                        <input id="file2" type="text" name="img2">
+                    </label>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <label class="btn green" for="img_submit">enviar
+                        <input id="img_submit" type="submit">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+        flex: 1;
+        align-items: center;
+        background: #f3f3fa;
+    }
+
+    .container {
+        background: white;
+        padding: 32px 32px 48px;
+        border-radius: 16px;
+        box-shadow: 2px 6px 8px black;
+    }
+
+    .btn {
+        padding: 6px 14px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 4px;
+        width: 100%;
+        max-width: 80vw;
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        margin: 10px 14px 14px;
+    }
+
+    .btn:hover {
+        filter: brightness(120%);
+        box-shadow: 1px 1px 2px #000;
+        cursor: pointer;
+    }
+
+    .blue {
+        background: deepskyblue;
+        color: white;
+    }
+
+    .green {
+        background: limegreen;
+        color: white;
+    }
+
+    form {
+        margin-top: 40px;
+    }
+
+    input {
+        display: none;
+    }
+
+</style>
+
+<script>
+
+    const uploadImages = (i) => {
+        let file = document.getElementById('img' + i);
+        let input = document.getElementById('file' + i)
+        if (file) {
+            file.addEventListener('change', function() {
+                file.parentElement.classList.add('blue');
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    input.value = e.target.result;
+                }
+                reader.readAsDataURL(this.files[0]);
+            })
+        }
+    }
+
+    [].forEach.call(document.getElementsByClassName('file'), (input, i) => {
+        uploadImages(i +1)
+    })
+
+
+</script>
