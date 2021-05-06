@@ -3,8 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="e6388ec6-a7c2-4d4b-9b8f-c7587963aca1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reconhecimento/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconhecimento/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reconhecimento/redis_queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184654.9916124.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.1098862.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.1315496.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.2460399.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.2731202.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.352027.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.4854672.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.4924917.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.5747252.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.7688618.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.8369122.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.8614678.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184655.8810635.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184676.0273037.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184678.3901606.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184698.2475975.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184742.9368286.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184742.9574354.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184742.9620035.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184765.2540758.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img1_1619184765.2606475.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img2_1619184742.9621272.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img2_1619184742.9621682.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img2_1619184742.9624994.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img2_1619184765.2607632.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconhecimento/temp/img2_1619184765.26084.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +103,7 @@
       <workItem from="1619107158066" duration="65000" />
       <workItem from="1619107612421" duration="166000" />
       <workItem from="1619107809463" duration="16786000" />
-      <workItem from="1620311817553" duration="50000" />
+      <workItem from="1620311817553" duration="165000" />
     </task>
     <servers />
   </component>
