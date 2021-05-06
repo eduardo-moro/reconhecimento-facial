@@ -55,48 +55,6 @@ def recognition():
     else:
         return 'Nenhum parâmetro recebido.'
 
-@app.route('/teste_de_carga', methods=['GET', 'POST'])
-def teste():
-    if request.method == 'POST':
-
-        img1 = request.form.get('img1')
-        img2 = request.form.get('img2')
-
-        img1 = strtr(img1, {'.' : '+', '_' : '/', '-' : '/'})
-        img2 = strtr(img2, {'.' : '+', '_' : '/', '-' : '/'})
-
-        if((img1 and img2) == False):
-            return "Parâmetro inválido"
-
-        if(img1 != ''):
-            path1 = saveFile('./temp/img1_'+ str(time.time()) + '.jpeg', img1)
-
-        if(img2 != ''):
-            path2 = saveFile('./temp/img2_'+ str(time.time()) + '.jpeg', img2)
-
-        result = compareFaces(path1, path2)
-
-        os.remove(path1)
-        os.remove(path2)
-
-
-        if(float(result) > 0.72):
-            message = "Biometria válida!"
-        elif (float(result) < 0):
-            message = "Nenhum rosto identificado."
-        else:
-            message = "Biometria inválida."
-
-
-        return jsonify(
-            result = result,
-            message = message,
-        )
-
-    else:
-        return 'Nenhum parâmetro recebido.'
-
-
 def strtr(strng, replace):
     buf, i = [], 0
     if strng is not None:
