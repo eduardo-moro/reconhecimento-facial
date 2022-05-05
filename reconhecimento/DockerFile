@@ -1,0 +1,22 @@
+FROM python:3.9.10-alpine as builder
+
+COPY ./requirements.txt /requirements.txt
+
+RUN apk add cmake
+RUN apk add musl-dev linux-headers g++
+RUN apk add --update gfortran build-base
+
+RUN pip3 install --upgrade pip
+
+RUN pip3 install flask
+RUN pip3 install gunicorn==20.1.0
+RUN pip3 install face_recognition
+RUN pip3 install opencv-python
+
+RUN echo '\a'
+
+RUN pip3 install numpy<=1.14.3
+
+RUN echo '\a'
+
+COPY ./app /var/www
