@@ -1,7 +1,0 @@
-flask
-gunicorn==20.1.0
-face_recognition
-opencv-python
-base64
-
-
